@@ -1,4 +1,2 @@
-[
-build.environment
-]
+[build.environment]
   DOTNET_VERSION = "9.0"
