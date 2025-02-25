@@ -1,1 +1,9 @@
- DOTNET_VERSION = "9.0"
+[build]
+  # 指定构建命令
+  command = "dotnet publish -c Release"
+  # 指定发布目录
+  publish = "bin/Release/net9.0/publish/wwwroot"
+
+[build.environment]
+  # 指定使用 .NET 9 SDK
+  DOTNET_VERSION = "9.0"
