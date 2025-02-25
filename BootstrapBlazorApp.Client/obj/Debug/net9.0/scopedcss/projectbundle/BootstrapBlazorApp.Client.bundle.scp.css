@@ -1,0 +1,200 @@
+/* /Layout/LayoutPreview.razor.rz.scp.css */
+.layout-preview[b-ecw23pluda] {
+    font-size: 9px;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    border: 2px solid #c0c4cc;
+    transition: border .3s linear;
+}
+
+    .layout-preview:hover[b-ecw23pluda] {
+        border: 2px solid #28a745;
+    }
+
+    .layout-preview.active[b-ecw23pluda] {
+        border: 2px solid #28a745;
+    }
+
+[b-ecw23pluda] .layout {
+    --bb-layout-height: 80px;
+    --bb-layout-header-height: 16px;
+    --bb-layout-footer-height: 12px;
+    --bb-layout-sidebar-width: 30%;
+    --bb-layout-banner-font-size: 9px;
+    --bb-layout-title-color: #fff;
+    border: 1px solid var(--bb-layout-header-background);
+}
+
+    [b-ecw23pluda] .layout .layout-footer,
+    [b-ecw23pluda] .layout .layout-header {
+        justify-content: center;
+    }
+
+    [b-ecw23pluda] .layout .layout-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/* /Layout/MainLayout.razor.rz.scp.css */
+.layout-drawer-body[b-hdgvvtfktm]  .groupbox {
+    margin-top: 1rem;
+}
+
+.layout-drawer-body[b-hdgvvtfktm]  .btn-info {
+    --bs-info: #0078d4;
+    --bs-btn-hover-bg: #1260b0;
+    margin-bottom: 1rem;
+}
+
+.cell-label[b-hdgvvtfktm] {
+    line-height: 35px;
+}
+
+#blazor-error-ui[b-hdgvvtfktm] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-hdgvvtfktm] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* /Pages/Leaderboard.razor.rz.scp.css */
+*[b-lgaz799znm] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body[b-lgaz799znm] {
+    background: #f0f2f5;
+    padding: 20px;
+}
+
+.container[b-lgaz799znm] {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 24px;
+}
+
+.filter-bar[b-lgaz799znm] {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.filter-btn[b-lgaz799znm] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #f0f2f5;
+    color: #606266;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn.active[b-lgaz799znm] {
+    background: #1677ff;
+    color: white;
+}
+
+.leaderboard-list[b-lgaz799znm] {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.leaderboard-item[b-lgaz799znm] {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    border: 1px solid #eee;
+}
+
+.leaderboard-item:hover[b-lgaz799znm] {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.rank[b-lgaz799znm] {
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #1677ff;
+    font-size: 18px;
+}
+
+.avatar[b-lgaz799znm] {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: 2px solid #eee;
+}
+
+.info[b-lgaz799znm] {
+    flex: 1;
+}
+
+.name[b-lgaz799znm] {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.score[b-lgaz799znm] {
+    color: #666;
+    font-size: 14px;
+}
+
+.badge[b-lgaz799znm] {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #f0f2f5;
+}
+
+/* 前三名特殊样式 */
+.leaderboard-item:first-child .rank[b-lgaz799znm] { color: #ffd700; }
+.leaderboard-item:nth-child(2) .rank[b-lgaz799znm] { color: #c0c0c0; }
+.leaderboard-item:nth-child(3) .rank[b-lgaz799znm] { color: #cd7f32; }
+/* /Pages/Users.razor.rz.scp.css */
+.page-user[b-pvkokeijgz] {
+    height: calc(100vh - 82px - var(--bb-layout-footer-height) - var(--bb-tabs-item-height, 0px));
+}
+
+.user-demo-address[b-pvkokeijgz] {
+    margin-top: .25rem;
+    font-size: 86%;
+    color: #c0c4cc;
+}
+
+[b-pvkokeijgz] .table-users {
+    height: calc(100% - 93px);
+}
+
+[b-pvkokeijgz] .table-cell img {
+    width: 46px;
+    border-radius: var(--bs-border-radius);
+}
+
+[b-pvkokeijgz] .table-cell .progress {
+    height: 6px;
+    margin-top: .5rem;
+}

@@ -1,0 +1,51 @@
+﻿@page "/Leaderboard"
+
+
+<PageTitle>Leaderboard</PageTitle>
+
+
+<div class="container">
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="world">全球榜</button>
+        <button class="filter-btn" data-filter="country">国家榜</button>
+        <button class="filter-btn" data-filter="friends">好友榜</button>
+    </div>
+
+    <div class="leaderboard-list" id="leaderboard">
+        <!-- 示例数据 -->
+        <div class="leaderboard-item" data-filter="world country friends">
+            <div class="rank">1</div>
+            <img src="https://picsum.photos/48/48?random=1" class="avatar">
+            <div class="info">
+                <div class="name">玩家战神</div>
+                <div class="score">🎯 1,234,567 分</div>
+            </div>
+            <div class="badge">🏆 冠军</div>
+        </div>
+
+        <div class="leaderboard-item" data-filter="world country">
+            <div class="rank">2</div>
+            <img src="https://picsum.photos/48/48?random=2" class="avatar">
+            <div class="info">
+                <div class="name">游戏达人</div>
+                <div class="score">🎯 987,654 分</div>
+            </div>
+            <div class="badge">🥈 亚军</div>
+        </div>
+
+        <div class="leaderboard-item" data-filter="world friends">
+            <div class="rank">3</div>
+            <img src="https://picsum.photos/48/48?random=3" class="avatar">
+            <div class="info">
+                <div class="name">操作王者</div>
+                <div class="score">🎯 765,432 分</div>
+            </div>
+            <div class="badge">🥉 季军</div>
+        </div>
+        
+    </div>
+</div>
+
+@code {
+    
+}

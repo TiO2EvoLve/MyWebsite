@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 24px;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #f0f2f5;
+    color: #606266;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn.active {
+    background: #1677ff;
+    color: white;
+}
+
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    border: 1px solid #eee;
+}
+
+.leaderboard-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.rank {
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #1677ff;
+    font-size: 18px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: 2px solid #eee;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.score {
+    color: #666;
+    font-size: 14px;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #f0f2f5;
+}
+
+/* 前三名特殊样式 */
+.leaderboard-item:first-child .rank { color: #ffd700; }
+.leaderboard-item:nth-child(2) .rank { color: #c0c0c0; }
+.leaderboard-item:nth-child(3) .rank { color: #cd7f32; }
